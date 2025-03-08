@@ -22,15 +22,11 @@ export function ToolCard({ title, description, icon, href, className }: ToolCard
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
-      <CardContent className="pb-2">
-        <div className="h-16 text-sm text-muted-foreground">{description}</div>
-      </CardContent>
       <CardFooter>
         <Link href={href} className="w-full">
           <Button className="w-full">Try Now</Button>
         </Link>
       </CardFooter>
     </Card>
-  )
+  );
 }
-
